@@ -1,0 +1,79 @@
+\newcommand{\net}{\mu}
+\newcommand{\mkmsg}[5]{(#1,#2)\rightarrow(#3,#4,#5)}
+\newcommand{\msg}{m}
+\newcommand{\hist}{\omega}
+\newcommand{\loc}{\ell}
+\newcommand{\progloc}{\texttt{l}}
+\newcommand{\exitloc}{\texttt{exit}}
+\newcommand{\entryloc}{\texttt{entry}}
+\newcommand{\mkloc}[3]{#1.#2.#3}
+\newcommand{\evnt}{e}
+\newcommand{\addr}{a}
+\newcommand{\ty}{t}
+\newcommand{\store}{\zeta}
+\newcommand{\actstore}{\eta}
+\newcommand{\var}{x}
+\newcommand{\val}{v}
+\newcommand{\cons}[2]{#1\cdot#2}
+\newcommand{\mkstate}[4]{\langle\cons{\cons{\textcolor{Plum}{#1}}{\textcolor{Cayenne}{#2}}}{\cons{\textcolor{Teal}{#3}}{#4}}\rangle}
+
+\newcommand{\absaddr}{\hat{\addr}}
+\newcommand{\sep}[2]{#1*#2}
+\newcommand{\linsep}[2]{#1\otimes#2}
+\newcommand{\tool}{\texttt{Mhira}}
+\newcommand{\absnet}{\textcolor{Teal}{\hat{\net}}}
+\newcommand{\absmsg}{\hat{\msg}}
+\newcommand{\mkptp}[5]{(#1,#2)\rightarrow_{P2P}(#3,#4,#5)}
+\newcommand{\mkbcast}[5]{(#1,#2)\rightarrow_{BC}(#3,#4,#5)}
+\newcommand{\absloc}{\textcolor{Plum}{\hat{\loc}}}
+\newcommand{\absstore}{\textcolor{Cayenne}{\hat{\store}}}
+\newcommand{\absactstore}{\hat{\actstore}}
+\newcommand{\msggraph}{\hat{M}}
+\newcommand{\mksymstate}[4]{\langle\cons{\cons{\textcolor{Plum}{#1}}{\textcolor{Cayenne}{#2}}}{\cons{\textcolor{Teal}{#3}}{#4}}\rangle}
+
+% Semantics 
+\newcommand{\mktrans}[3]{#1 \mathrel{\mathord{-}\mkern-4mu[#2]\mkern-4mu\mathord{\rightarrow}} #3}
+\newcommand{\instrstep}[2]{#1\rightarrow_c#2}
+\newcommand{\step}[2]{#1\rightarrow#2}
+\newcommand{\eval}[2]{#1\downarrow#2}
+\newcommand{\absstep}[2]{#1\rightsquigarrow#2}
+\newcommand{\absinstrstep}[2]{#1\rightsquigarrow_c #2}
+\newcommand{\abseval}[2]{#1\Downarrow#2}
+\newcommand{\code}[1]{\texttt{#1}}
+
+
+\lstdefinelanguage{P}{
+  morekeywords={
+    machine, event, fun, var, type, enum, spec, module, test, 
+    start, state, entry, exit, on, goto, do, defer, ignore, raise, send, broadcast,
+    new, assert, assume, if, else, while, foreach, in, sizeof, return, true, false, null,
+    int, seq
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  alsoletter={:}
+}
+\lstset{language=P}
+
+\newcommand{\lstbasicstyle}{\ttfamily\ttfamily\small}
+\newcommand{\lstkeywordstyle}{\color{Cayenne}\bfseries}
+\newcommand{\lstcommentstyle}{\sl}
+\newcommand{\lstnumberstyle}{\scriptsize\em}
+
+\lstdefinestyle{default}{%
+  backgroundcolor=\color{white},%
+  basicstyle=\lstbasicstyle,%
+  commentstyle=\lstcommentstyle,%
+  keywordstyle=\lstkeywordstyle,
+  numbers=left,
+  numberstyle=\lstnumberstyle,
+  columns=fullflexible,%
+  keepspaces=true,%
+  mathescape=true%
+}
+\lstset{style=default}
+
+\newcommand{\jedi}[1]{\textcolor{blue}{[#1]}}

@@ -1,0 +1,45 @@
+\usepackage{xcolor}
+%%% Define color names from the Apple Palette. This is the second row that works on a white background.
+\definecolor{Cayenne}{HTML}{941100}
+\definecolor{Mocha}{HTML}{945200}
+\definecolor{Asparagus}{HTML}{929000}
+\definecolor{Fern}{HTML}{4F8F00}
+\definecolor{Clover}{HTML}{008F00}
+\definecolor{Moss}{HTML}{009051}
+\definecolor{Teal}{HTML}{009193}
+\definecolor{Ocean}{HTML}{005493}
+\definecolor{Midnight}{HTML}{011993}
+\definecolor{Eggplant}{HTML}{011993}
+\definecolor{Plum}{HTML}{942193}
+\definecolor{Maroon}{HTML}{942193}
+
+\lstdefinelanguage{P}{
+  morekeywords={
+    machine, event, fun, var, type, enum, spec, module, test, 
+    start, state, entry, exit, on, goto, do, defer, ignore, raise, send, broadcast,
+    new, assert, assume, if, else, while, foreach, in, sizeof, return, true, false, null,
+    int, seq
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  alsoletter={:}
+}
+\lstset{language=P}
+
+\newcommand{\lstbasicstyle}{\ttfamily\ttfamily\small}
+\newcommand{\lstkeywordstyle}{\color{Cayenne}\bfseries}
+\newcommand{\lstcommentstyle}{\sl}
+\newcommand{\lstnumberstyle}{\scriptsize\em}
+
+\lstdefinestyle{default}{%
+  backgroundcolor=\color{white},%
+  basicstyle=\lstbasicstyle,%
+  commentstyle=\lstcommentstyle,%
+  keywordstyle=\lstkeywordstyle,%
+  columns=fullflexible,%
+  keepspaces=true,%
+  mathescape=true%
+}

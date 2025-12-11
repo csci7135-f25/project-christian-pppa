@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Library.fs"/>
+        <Compile Include="CFG.fs" />
+        <Compile Include="NumericDomain.fs" />
+        <Compile Include="Domain.fs" />
+        <Compile Include="AbstractSemantics.fs" />
+        <PackageReference Include="Antlr4.Runtime" Version="4.6.0" />
+        <ProjectReference Include="../ext/PCompiler/CompilerCore/CompilerCore.csproj" />
+    </ItemGroup>
+</Project>

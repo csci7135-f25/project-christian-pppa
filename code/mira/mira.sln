@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "mira", "mira\mira.fsproj", "{92A3937C-06D6-48C5-B9CA-ED934FF0F563}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "miratest", "mira-test\miratest.fsproj", "{0A553BA0-2701-4782-9CEE-EB8225272A3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A3937C-06D6-48C5-B9CA-ED934FF0F563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A3937C-06D6-48C5-B9CA-ED934FF0F563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A3937C-06D6-48C5-B9CA-ED934FF0F563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A3937C-06D6-48C5-B9CA-ED934FF0F563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C314D3B-36A4-4EE4-A40D-D80EB7F3981E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C314D3B-36A4-4EE4-A40D-D80EB7F3981E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C314D3B-36A4-4EE4-A40D-D80EB7F3981E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C314D3B-36A4-4EE4-A40D-D80EB7F3981E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A553BA0-2701-4782-9CEE-EB8225272A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A553BA0-2701-4782-9CEE-EB8225272A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A553BA0-2701-4782-9CEE-EB8225272A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A553BA0-2701-4782-9CEE-EB8225272A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
