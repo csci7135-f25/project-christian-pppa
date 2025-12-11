@@ -1,7 +1,7 @@
-MAIN=paper
+MAIN=main
 SRCS=$(wildcard *.tex *.sty *.bib)
 
-.PHONY: all clean reallyclearn
+.PHONY: all clean reallyclean
 all: ${MAIN}.pdf
 clean:
 	latexmk -c
